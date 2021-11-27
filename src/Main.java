@@ -2,8 +2,11 @@ import processing.core.*;
 
 public class Main extends PApplet {
 
+    private static Board board;
+
     public void setup() {
 
+        board = new Board();
     }
 
     public void draw() {
@@ -11,7 +14,7 @@ public class Main extends PApplet {
     }
 
     public void settings() {
-        this.size(600, 600);
+        size(600, 600);
     }
 
     public static void main(String[] args) {
